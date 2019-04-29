@@ -1,0 +1,22 @@
+<div class="container-fluid bgprl" parallax>
+  <div class="row">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      <div class="brief">
+        <h1 class="heading">SERVICES OFFERED BY US</h1>
+        <p class="description">We are committed to serve our consumers.If you're searching for the best events to work on or to
+           hire the best for your events, then you are the best place. We provide the below services to the customers</p>
+      </div>
+      <div class="services container-fluid">
+        <div class="card-outer col-sm-12 col-md-4" *ngFor="let service of services">
+          <div class="card">
+            <img class="card-img-top" src="{{ service.image }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ service.title }}</h5>
+              <p class="card-text">{{ service.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

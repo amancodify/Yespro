@@ -1,0 +1,39 @@
+.briefcont{
+    width: 100%;
+    height: 100%;
+    background-image:url('src/assets/images/briefcont.jpg');
+    background-size: cover;
+
+}
+
+.brief{
+    margin: 5em 0;
+    text-align: center;
+}
+
+.heading{
+    font-weight: normal;
+    font-family: roboto;
+    font-size: 2.5em;
+    color:white;
+}
+.description{
+    font-size: 19px;
+    margin-top: 1cm;
+    color:white;
+    font-family: roboto;
+}
+.row{
+    justify-content: center;
+    font-family: roboto;
+}
+
+
+
+.white-button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+}
