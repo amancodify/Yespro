@@ -14,6 +14,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
+import { HowitworksComponent } from './howitworks/howitworks.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { AboutComponent } from './about/about.component';
     ContactusComponent,
     MainComponent,
     AboutComponent,
+    HowitworksComponent,
+    BlogsComponent,
   ],
   imports: [
     BrowserModule,
