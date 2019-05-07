@@ -2,8 +2,16 @@ body {
     font-family: 'Roboto';font-size: 16px;
 }
 
+.about-title{
+    padding-top: 58px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: rgb(255, 255, 255);
+    background-image: url('src/assets/images/aboutback.jpg');
+    height: 198px;
+}
 .aboutus-section {
-    padding: 90px 0;
+    padding: 0px 0;
 }
 .aboutus-title {
     font-size: 30px;
@@ -91,7 +99,6 @@ a:hover, a:active {
 }
 .icon {
     color : #f4b841;
-    padding:0px;
     font-size:40px;
     border: 1px solid #fdb801;
     border-radius: 100px;
@@ -109,7 +116,6 @@ a:hover, a:active {
     font-weight: 400;
     text-align: center;
     margin: 0 0 40px;
-    padding-bottom: 20px;
     text-transform: uppercase;
 }
 ul{
@@ -122,8 +128,8 @@ ul{
 }
 .padding-lg {
 	display: block;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 10px;
+	padding-bottom: 80px;
 }
 .practice-area.padding-lg {
     padding-bottom: 55px;
@@ -215,4 +221,7 @@ ul{
 }
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
+}
+.container{
+    height: 500px;
 }
