@@ -10,6 +10,9 @@ import { BriefcontComponent } from './briefcont/briefcont.component';
 import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './footer/footer.component';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -21,11 +24,15 @@ import { LatestnewsComponent } from './latestnews/latestnews.component';
     BriefcontComponent,
     ClientsComponent,
     FooterComponent,
-    LatestnewsComponent
+    LatestnewsComponent,
+    ContactusComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
-    ParallaxModule
+    ParallaxModule,
+    AppRoutingModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
