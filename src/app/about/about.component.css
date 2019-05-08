@@ -9,19 +9,17 @@ body {
     color: rgb(255, 255, 255);
     background-image: url('src/assets/images/aboutback.jpg');
     height: 198px;
+    font-size: 55px;
 }
-.aboutus-section {
-    padding: 0px 0;
-}
+
 .aboutus-title {
-    font-size: 30px;
+    font-size: 3.5rem ;
     letter-spacing: 0;
     line-height: 32px;
     margin: 0 0 39px;
     padding: 0 0 11px;
     position: relative;
-    text-transform: uppercase;
-    color: #000;
+    color:darkred;
 }
 .aboutus-title::after {
     background: #fdb801 none repeat scroll 0 0;
@@ -30,7 +28,7 @@ body {
     height: 2px;
     left: 0;
     position: absolute;
-    width: 54px;
+    width: 80px;
 }
 .aboutus-text {
     color: #606060;
@@ -128,7 +126,7 @@ ul{
 }
 .padding-lg {
 	display: block;
-	padding-top: 10px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 .practice-area.padding-lg {
@@ -164,6 +162,7 @@ ul{
 
 .our-webcoderskull{
   background: url("src/assets/images/bgabout.jpg") no-repeat center top / cover;
+  height: 750px;
   
 }
 .our-webcoderskull .cnt-block{ 
@@ -223,5 +222,5 @@ ul{
    color:#025a8e;
 }
 .container{
-    height: 500px;
+    height: 650px;
 }
