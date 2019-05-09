@@ -3,11 +3,10 @@ body {
 }
 
 .about-title{
-    padding-top: 58px;
+    padding-top: 38px;
     text-align: center;
-    margin-bottom: 70px;
-    color: rgb(255, 255, 255);
-    background-image: url('src/assets/images/aboutback.jpg');
+    margin-bottom: 10px;
+    color: rgb(54, 2, 43);
     height: 198px;
     font-size: 55px;
 }
@@ -15,7 +14,7 @@ body {
 .aboutus-title {
     font-size: 3.5rem ;
     letter-spacing: 0;
-    line-height: 32px;
+    line-height: 35px;
     margin: 0 0 39px;
     padding: 0 0 11px;
     position: relative;
@@ -223,4 +222,16 @@ ul{
 }
 .container{
     height: 650px;
+}
+.contdes{
+    
+    border: 2px solid #2b0e6d;
+    border-radius:  25px;
+    color: #2b0e6d;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    margin-bottom: 20px;
 }
