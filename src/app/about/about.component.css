@@ -21,6 +21,7 @@
 
 .admi {
     max-height: 500px;
+
 }
 
 .aboutus-banner {
@@ -37,33 +38,29 @@
 .clients-heading{
     color: white;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .card{
-    width: 250px;
+    width: 100%;
     margin-top: 70px;
     text-align: center;
 }
-.image-size{
-    height: 200px;
-}
-.teamdiv {
-    list-style: none;
+.row {
     display: flex;
     justify-content: center;
+    padding-bottom: 22px;
+    width: 100%;
 }
 .social{
     list-style: none;
-    color: black;
     background-color: black;
     display: flex;
+    justify-content: center;
 }
-.social li{
-    margin: 5%;
-}
+
 .social-img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 .card-title{
     color:darkred;
@@ -72,4 +69,13 @@
 }
 .container{
     padding-bottom: 50px;
+}
+.description{
+    padding: 7%;
+}
+.social-logo{
+    margin: 3%;
+}
+.image-size{
+    height: 200px;
 }
