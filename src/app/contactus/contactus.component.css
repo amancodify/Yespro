@@ -2,7 +2,8 @@ body{
     background-color: #25274d;
 }
 .contact{
-    padding: 4%;
+    padding-left: 220px;
+    padding-top: 60px;
     height: 800px;
 }
 .col-md-3{

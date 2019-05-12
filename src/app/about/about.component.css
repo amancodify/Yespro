@@ -1,5 +1,5 @@
 .about-us {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0px 0;
 }
 .main-content {
     padding: 50px 0 0 0;
@@ -26,4 +26,50 @@
 .aboutus-banner {
     display: flex;
     justify-content: center;
+}
+.feature-content h4{
+    color: darkred;
+}
+.clients-about{
+    background: url('src/assets/images/bgabout.jpg');
+    height: 100%;
+}
+.clients-heading{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.card{
+    width: 250px;
+    margin-top: 70px;
+    text-align: center;
+}
+.image-size{
+    height: 200px;
+}
+.teamdiv {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social{
+    list-style: none;
+    color: black;
+    background-color: black;
+    display: flex;
+}
+.social li{
+    margin: 5%;
+}
+.social-img{
+    height: 30px;
+    width: 30px;
+}
+.card-title{
+    color:darkred;
+    font-family: cursive;
+    font-size: 20PX;
+}
+.container{
+    padding-bottom: 50px;
 }
