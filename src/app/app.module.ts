@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
-
 import { AppComponent } from './app.component';
+import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { VideoheaderComponent } from './videoheader/videoheader.component';
 import { BriefComponent } from './brief/brief.component';
@@ -16,6 +21,7 @@ import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { HowitworksComponent } from './howitworks/howitworks.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { FreelancerComponent } from './freelancer/freelancer.component';
 
 
 @NgModule({
@@ -33,12 +39,16 @@ import { BlogsComponent } from './blogs/blogs.component';
     AboutComponent,
     HowitworksComponent,
     BlogsComponent,
+    FreelancerComponent,
   ],
   imports: [
     BrowserModule,
     ParallaxModule,
-    AppRoutingModule
-  
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase, 'yespro'), // imports firebase/app needed for everything
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,8 @@ body{
 .contact{
     width: 100%;
     padding-top: 60px;
-    height: 800px;
+    padding-bottom: 60px;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -15,8 +16,8 @@ body{
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
-.contact-info{
-    margin-top:30%;
+.contlabel{
+    margin-bottom: 15%;
 }
 .contact-info img{
     margin-bottom: 15%;
@@ -57,9 +58,13 @@ body{
 }
 .title-top{
     padding-bottom: 40px;
+    padding-left: 5%;
 }
 
 .row {
     display: flex;
     justify-content: center;
+}
+.yellow{
+    margin: 1%;
 }
