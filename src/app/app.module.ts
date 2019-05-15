@@ -22,6 +22,9 @@ import { AboutComponent } from './about/about.component';
 import { HowitworksComponent } from './howitworks/howitworks.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { FreelancerComponent } from './freelancer/freelancer.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+
 
 
 @NgModule({
@@ -40,6 +43,8 @@ import { FreelancerComponent } from './freelancer/freelancer.component';
     HowitworksComponent,
     BlogsComponent,
     FreelancerComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
