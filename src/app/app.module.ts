@@ -24,6 +24,8 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { FreelancerComponent } from './freelancer/freelancer.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -50,10 +52,10 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     ParallaxModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase, 'yespro'), // imports firebase/app needed for everything
+    AngularFireModule.initializeApp(environment.firebase), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, BrowserAnimationsModule // imports firebase/storage only needed for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]

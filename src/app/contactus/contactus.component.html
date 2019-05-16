@@ -1,4 +1,4 @@
-<div class="contact">
+<!-- <div class="contact">
 <div class="container">
 	<div class="title-top">
 		<h1>YesPro - Contact US </h1>
@@ -48,3 +48,42 @@
 	</div>
 </div>
 </div>
+
+ -->
+
+
+<form
+  [formGroup]="submitForm"
+  (ngSubmit)="onSubmit(submitForm)"
+  style="max-width: 500px; margin: 0 auto"
+>
+  <ng-container *ngIf="!submitted; else notSubmitted">
+    <h1>Contact Us</h1>
+    <mat-form-field style="display: block">
+      <input matInput formControlName="fname" placeholder="First Name" />
+    </mat-form-field>
+    <mat-form-field style="display: block">
+      <input matInput formControlName="lname" placeholder="Last Name" />
+    </mat-form-field>
+    <mat-form-field style="display: block">
+      <input matInput formControlName="email" placeholder="Your email" />
+    </mat-form-field>
+    <mat-form-field style="display: block">
+      <textarea
+        matInput
+        formControlName="message"
+        placeholder="Your message"
+      ></textarea>
+    </mat-form-field>
+    <button
+      mat-flat-button
+      color="primary"
+      type="submit"
+      [disabled]="submitForm.invalid">
+      Send
+    </button>
+  </ng-container>
+  <ng-template #notSubmitted>
+    <h2 style="text-align: center">The form has been submitted</h2>
+  </ng-template>
+</form>
