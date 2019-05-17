@@ -2,26 +2,10 @@
     padding: 50px 0 0px 0;
 }
 .main-content {
-    padding: 50px 0 0 0;
+   color: white;
 }
-
-.contdes{
-    
-    border: 2px solid #2b0e6d;
-    border-radius:  25px;
-    color: #2b0e6d;
-    display: inline-block;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: 0;
-    padding: 7px 20px;
-    margin-left: 380px;
-    margin-bottom: 20px;
-}
-
 .admi {
-    max-height: 500px;
-
+    max-height: 450px;
 }
 
 .aboutus-banner {
@@ -29,7 +13,10 @@
     justify-content: center;
 }
 .feature-content h4{
-    color: darkred;
+    color: yellow;
+}
+.feature-content{
+    text-align: justify;
 }
 .clients-about{
     background: url('src/assets/images/bgabout.jpg');
@@ -48,7 +35,6 @@
 .row {
     display: flex;
     justify-content: center;
-    padding-bottom: 22px;
     width: 100%;
 }
 .social{
@@ -78,4 +64,109 @@
 }
 .image-size{
     height: 200px;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height:100%;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .display-3 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.7;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+  .register-right{
+    background: #00080f;
+    opacity: 0.8;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    /* border-radius: 40px; */
+    margin-top: 50px;
+    /* margin-bottom: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%; */
+    padding-top: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: solid;
+    border-color: white;
+    
+}
+.register-heading{
+    text-align: center;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.comp-title{
+    color: yellow;
+    text-align: center;
+    padding-bottom: 20px;
+   
+    font-size: 4em;
+}
+
+
+hr{ 
+    border-color: white;
+    width: 600px;       
+}
+.aboutus-text{
+    text-align: justify;
+}
+.col-md-4{
+    padding-left: 30px;
+}
+.clients-heading{
+    font-size: 4em;
+    color: white;
 }

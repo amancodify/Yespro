@@ -71,6 +71,8 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
     padding-bottom: 5%;
     padding-right: 10%;
     padding-left: 10%;
+    border-style: solid;
+    border-color: white;
     
 }
 .register-heading{
