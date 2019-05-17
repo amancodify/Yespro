@@ -68,3 +68,23 @@ body{
 .yellow{
     margin: 1%;
 }
+
+.tick {
+    font-size: 3em;
+    border: 5px solid;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: green;
+    color: white;
+}
+
+.afterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
