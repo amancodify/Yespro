@@ -23,27 +23,27 @@ export class BriefComponent implements OnInit {
       {
         image: 'assets/images/card1.png',
         title: 'EVENTS',
-        body: "Don't miss a chance of working in the best events happening around you."
+        body: "Don't miss a chance of working in the best events happening around you. Get it now !!"
       },
       {
         image: 'assets/images/vendor.png',
         title: 'VENDORS',
-        body: 'Dive into the ocean of vendors and make business according to you.'
+        body: 'Dive into the ocean of vendors and make the business according to you ideas and aspiration.'
       },
       {
         image: 'assets/images/artist.png',
         title: 'ARTISTS',
-        body: 'Artists put life to the event and we have them for you, reach them out !!'
+        body: 'Artists put life & Soul to the events that we have them for you, reach them out for soulful event!!'
       },
       {
         image: 'assets/images/venue.png',
         title: 'VENUE',
-        body: 'Getting place is first, get the venue early before you start your event.'
+        body: 'Getting place of your choice is first thing to do, get the venue early before you start your event.'
       },
       {
         image: 'assets/images/bouncers.png',
         title: 'BOUNCERS',
-        body: 'Security & Protection is a must, Feel secured and hire them !!'
+        body: 'Security & Protection is a must thing to have around you, Feel secured and hire them !!'
       },
      
     ]

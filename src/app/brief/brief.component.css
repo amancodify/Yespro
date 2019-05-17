@@ -25,11 +25,13 @@
 }
 
 .card {
+    background-color:black;
     padding: 1em;
+    width: 300px;
 }
 .card-outer {
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em;
     
 }
 
@@ -43,11 +45,12 @@
 .card-title{
     text-align: center;
     font-weight: normal;
-    color: #474747;
+    color: white;
 }
 
 .card-text{
     text-align: center;
+    color: white;
 }
 
 .heading{
