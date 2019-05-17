@@ -20,7 +20,7 @@ export class ContactusComponent {
     this.submitForm = this.fb.group({
       fname: ['', Validators.required],
       lname: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
     });
   }
