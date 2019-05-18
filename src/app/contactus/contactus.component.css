@@ -67,7 +67,7 @@ body{
 .row {
     display: flex;
     justify-content: center;
-    padding-left: 11%;
+    padding-left: 10%;
 }
 .yellow{
     margin: 1%;

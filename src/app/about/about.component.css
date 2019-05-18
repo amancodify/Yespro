@@ -19,7 +19,6 @@
     text-align: justify;
 }
 .clients-about{
-    background: url('src/assets/images/bgabout.jpg');
     height: 100%;
 }
 .clients-heading{
@@ -29,7 +28,7 @@
 }
 .card{
     width: 100%;
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
 }
 .row {
@@ -57,13 +56,20 @@
     padding-bottom: 50px;
 }
 .description{
-    padding: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+    padding-top: 1%;
 }
 .social-logo{
     margin: 3%;
 }
 .image-size{
-    height: 200px;
+    height: 180Px;
+    width: 130px;
+    margin-top: 20PX;
+    margin-bottom: 20px;
+    border-radius: 10%;
 }
 
 header {
@@ -127,14 +133,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
     border-bottom-left-radius: 10% 50%;
     border-top-right-radius: 10% 50%;
     border-bottom-right-radius: 10% 50%;
-    /* border-radius: 40px; */
-    margin-top: 50px;
-    /* margin-bottom: 50px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 10%;
-    padding-left: 10%; */
-    padding-top: 1.5%;
+    margin-top: 35px;
     padding-left: 5%;
     padding-right: 5%;
     border-style: solid;
@@ -151,7 +150,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
     color: yellow;
     text-align: center;
     padding-bottom: 20px;
-   
+    margin-top:15px;
     font-size: 4em;
 }
 
