@@ -1,133 +1,152 @@
 <header>
     <div class="overlay"></div>
     <video muted playsinline="playsinline" autoplay="autoplay" loop="loop">
-      <source src="assets/images/freelan.mp4" type="video/mp4">
+        <source src="assets/images/freelan.mp4" type="video/mp4">
     </video>
     <div class="container">
         <div class="row">
             <div class="col-md-12 register-right">
-                        <h1 class="comp-title">YESpro</h1>
-                          
-                        <h3 class="register-heading">Submit your Requirenments !!<hr></h3>
-                        
-                        <div class="row register-form">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Company Name *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>Event Type</option>
-                                        <option>Wedding/Reception</option>
-                                        <option>Corporate</option>
-                                        <option>Live Concert</option>
-                                        <option>Exhibition</option>
-                                        <option>Brand Activation</option>
-                                        <option>Leisure Event</option>
-                                        <option>Others</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>Freelancers Required</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                        <option>12</option>
-                                        <option>13</option>
-                                        <option>14</option>
-                                        <option>15</option>
-                                        <option>16</option>
-                                        <option>17</option>
-                                        <option>18</option>
-                                        <option>19</option>
-                                        <option>20</option>
-                                        <option>20-50</option>
-                                        <option>50-100</option>
-                                        <option>100-200</option>
-                                        <option>More than 200</option>
-                                    </select>
-                                </div>
+                <h1 class="comp-title">YESpro</h1>
+
+                <h3 class="register-heading"  *ngIf="!submitted">Submit your Requirenments !!
+                    
+                    <hr>
+                </h3>
+                <h3 class="register-heading"  *ngIf="submitted">Your response has been recorded. We will get back to you shortly. !!
+
+                    <hr>
+                </h3>
+                <form [formGroup]="submitForm" (ngSubmit)="onSubmit(submitForm)" *ngIf="!submitted; else formSubmitted">
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input formControlName="name" type="text" class="form-control" placeholder="Full Name *"
+                                    value="" />
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>No. of Days Required</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>More than 10</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option class="hidden"  selected disabled>Select Event's Location</option>
-                                        <option>Andra Pradesh</option>
-                                        <option>Arunachal Pradesh</option>
-                                        <option>Assam</option>
-                                        <option>Bihar</option>
-                                        <option>Chhattisgarh</option>
-                                        <option>Delhi</option>
-                                        <option>Goa</option>
-                                        <option>Gujarat</option>
-                                        <option>Haryana</option>
-                                        <option>Himachal Pradesh</option>
-                                        <option>Jammu and Kashmir</option>
-                                        <option>Jharkhand</option>
-                                        <option>Karnataka</option>
-                                        <option>Kerala</option>
-                                        <option>Madhya Pradesh</option>
-                                        <option>Maharashtra</option>
-                                        <option>Manipur</option>
-                                        <option>Meghalaya</option>
-                                        <option>Mizoram</option>
-                                        <option>Nagaland</option>
-                                        <option>Orissa</option>
-                                        <option>Punjab</option>
-                                        <option>Rajasthan</option>
-                                        <option>Sikkim</option>
-                                        <option>Tamil Nadu</option>
-                                        <option>Telagana</option>
-                                        <option>Tripura</option>
-                                        <option>Uttaranchal</option>
-                                        <option>Uttar Pradesh</option>
-                                        <option>West Bengal</option>
-                                        <option>Andaman and Nicobar Islands</option>
-                                        <option>Chandigarh</option>
-                                        <option>Dadar and Nagar Haveli</option>
-                                        <option>Daman and Diu</option>
-                                        <option>Lakshadeep</option>
-                                        <option>Pondicherry</option>
-                                    </select>
-                                </div>
-                                <input type="submit" class="btnRegister"  value="Submit"/>
+                            <div class="form-group">
+                                <input formControlName="cname" type="text" class="form-control"
+                                    placeholder="Company Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <select formControlName="etype" class="form-control">
+                                    <option class="hidden" selected disabled [value]="9999">Event Type</option>
+                                    <option>Wedding/Reception</option>
+                                    <option>Corporate</option>
+                                    <option>Live Concert</option>
+                                    <option>Exhibition</option>
+                                    <option>Brand Activation</option>
+                                    <option>Leisure Event</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select formControlName="freereq" class="form-control">
+                                    <option class="hidden" selected disabled value="9999">Freelancers Required</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="20-50">20-50</option>
+                                    <option value="50-100">50-100</option>
+                                    <option value="100-200">100-200</option>
+                                    <option value="200">More than 200</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input formControlName="email" type="email" class="form-control"
+                                    placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input formControlName="phone" type="text" minlength="10" maxlength="10"
+                                    name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <select formControlName="days" class="form-control">
+                                    <option class="hidden" selected disabled [value]="9999">No. of Days Required
+                                    </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>More than 10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select formControlName="location" class="form-control">
+                                    <option class="hidden" selected disabled [value]="9999">Select Event's Location
+                                    </option>
+                                    <option>Andra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Delhi</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu and Kashmir</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Orissa</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telagana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttaranchal</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>West Bengal</option>
+                                    <option>Andaman and Nicobar Islands</option>
+                                    <option>Chandigarh</option>
+                                    <option>Dadar and Nagar Haveli</option>
+                                    <option>Daman and Diu</option>
+                                    <option>Lakshadeep</option>
+                                    <option>Pondicherry</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btnRegister" [disabled]="submitForm.invalid">Submit</button>
+                        </div>
                     </div>
-                    </div>
-                </div>
-  </header>
+                </form>
+                <ng-template #formSubmitted>
+                    <h2 class="afterSubmit">
+                        <span class="tick">✔</span>
+                    </h2>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</header>

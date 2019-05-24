@@ -6,7 +6,8 @@
 <div class="contact">
 	<div class="container register-right">
 		<h1 class="comp-title cursive-writing2">Contact Us</h1>   
-		<h3 class="register-heading">Submit you Queries here !!<hr></h3>
+		<h3 class="register-heading"  *ngIf="!submitted">Submit you Queries here !!<hr></h3>
+		<h3 class="register-heading"  *ngIf="submitted">Your response has been recorded. We will get back to you shortly. !!<hr></h3>
 		<div class="row" *ngIf="!submitted; else formSubmitted">
 			<div class="col-md-3 col-xs-12 yellow">
 				<div class="contact-info">
@@ -58,8 +59,6 @@
 		</div>
 		<ng-template #formSubmitted>
 			<h2 class="afterSubmit">
-				Your response has been recorded. We will get back to you shortly.
-				<br>
 				<span class="tick">✔</span>
 			</h2>
 		</ng-template>
