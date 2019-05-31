@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-grabevents',
   templateUrl: './grabevents.component.html',
-  styleUrls: ['./grabevents.component.scss']
+  styleUrls: ['./grabevents.component.css']
 })
 export class GrabeventsComponent implements OnInit {
 
