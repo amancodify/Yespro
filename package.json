@@ -23,6 +23,7 @@
     "@angular/router": "^6.1.0",
     "angular-instafeed": "^1.8.3",
     "bootstrap": "^4.3.1",
+    "compass-mixins": "^0.12.10",
     "core-js": "^2.5.4",
     "firebase": "^6.0.2",
     "gmail-send": "^1.2.14",
