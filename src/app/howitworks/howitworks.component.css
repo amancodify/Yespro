@@ -1,0 +1,32 @@
+.main{
+    background-image: url(http://cdn.paperhi.com/1920x1200/20130608/minimalistic%20stars%20planets%20black%20background_www.paperhi.com_6.jpg);
+    padding-top: 10px;
+    padding-bottom: 20px;
+  } 
+  
+  .title{
+    text-align: center;
+    color: rgb(0, 255, 255); 
+    font-family: "Courier";
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .round{
+    margin-left:20px; 
+    margin-bottom:20px; 
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    border-radius: 50%
+  }
+
+  .steps{
+      padding-top: 35px; 
+  }
