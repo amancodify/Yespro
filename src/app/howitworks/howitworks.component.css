@@ -1,32 +1,44 @@
 .main{
-    background-image: url(http://cdn.paperhi.com/1920x1200/20130608/minimalistic%20stars%20planets%20black%20background_www.paperhi.com_6.jpg);
-    padding-top: 10px;
-    padding-bottom: 20px;
-  } 
-  
-  .title{
-    text-align: center;
-    color: rgb(0, 255, 255); 
-    font-family: "Courier";
-    font-size: 40px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
+  position: relative;
+  background-image: url(src/assets/images/yespos.jpg);
+  height:1350px;
+}
 
   .round{
-    margin-left:20px; 
+    margin-left:40px; 
     margin-bottom:20px; 
+    margin-top:20px; 
     height: 100px;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: wheat;
+    background: rgb(250, 228, 188);
     border-radius: 50%
   }
 
   .steps{
-      padding-top: 35px; 
+   width: 150px;  
+   margin-top:160px;
+  }
+
+  .img{
+   position: absolute;
+   top:0px;
+   right:0px;
+   
+  }
+
+  .title{
+   text-align: center;
+   padding-top: 350px;
+   padding-bottom: 20px;
+  }
+
+  .textru{
+    background-color: rgb(44, 44, 28);
+    color: whitesmoke;
+    border: 1px solid rgb(79, 250, 164);
+    border-radius: 20px 0px;
+    padding: 10px;
   }
