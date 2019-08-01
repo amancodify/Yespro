@@ -1,44 +1,166 @@
-.main{
+.main {
   position: relative;
   background-image: url(src/assets/images/yespos.jpg);
-  height:1350px;
+  height: 100%;
+  padding-bottom: 100px;
 }
 
-  .round{
-    margin-left:40px; 
-    margin-bottom:20px; 
-    margin-top:20px; 
+.round {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 95px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(48, 47, 46);
+  color: white;
+  border: 2px dotted rgb(220, 219, 221);
+  box-shadow: 0px 4px rgb(107, 107, 107);
+  border-radius: 50%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width:800px) {
+  .round {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     height: 100px;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(250, 228, 188);
-    border-radius: 50%
+    background: rgb(48, 47, 46);
+    color: white;
+    border: 2px dotted rgb(220, 219, 221);
+    box-shadow: 0px 4px rgb(107, 107, 107);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
   }
+}
 
-  .steps{
-   width: 150px;  
-   margin-top:160px;
-  }
+.img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
-  .img{
-   position: absolute;
-   top:0px;
-   right:0px;
-   
-  }
+}
 
-  .title{
-   text-align: center;
-   padding-top: 350px;
-   padding-bottom: 20px;
-  }
+.title {
+  text-align: center;
+  padding-top: 350px;
+  padding-bottom: 20px;
+}
 
-  .textru{
-    background-color: rgb(44, 44, 28);
-    color: whitesmoke;
-    border: 1px solid rgb(79, 250, 164);
-    border-radius: 20px 0px;
+.textru {
+  background-color: rgb(43, 43, 43);
+  color: whitesmoke;
+  border: 1px solid rgb(44, 44, 44);
+  border-radius: 20px 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px red;
+}
+
+.stepsblock {
+  display: flex;
+  margin-left: 10px;
+  width: 800px;
+}
+
+.details {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(48, 47, 46);
+  margin-top: 10px;
+  color: rgb(224, 224, 224);
+  font-weight: bold;
+  width: 70%;
+  border: 2px solid rgb(31, 29, 29);
+  border-radius: 0px 100px 100px 0px;
+  height: 80px;
+  margin-top: 32px;
+  box-shadow: 5px 5px rgb(107, 107, 107);
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 47, 46);
+    margin-top: 10px;
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+    font-size: 12px;
+    width: 250px;
+    border: 2px solid rgb(31, 29, 29);
+    border-radius: 5px;
+    height: 80px;
+    margin-top: 32px;
+    box-shadow: 5px 5px rgb(107, 107, 107);
     padding: 10px;
   }
+}
+
+.headtitilemain {
+  display: flex;
+  margin-top: 70px;
+}
+
+.steps1 {
+  width: 800px;
+  margin-top: 27px;
+  margin-left: 35px;
+  position: relative;
+  border: 2px solid rgb(196, 193, 193);
+  box-shadow: 2px 2px rgb(196, 193, 193);
+  border-radius: 2px;
+}
+
+.steps2 {
+  position: absolute;
+  top: 475px;
+  left: 850px;
+  width: 800px;
+  margin-top: 90px;
+  border: 2px solid rgb(196, 193, 193);
+  border-radius: 2px;
+  box-shadow: 2px 2px rgb(196, 193, 193);
+}
+
+.titlehead1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  background: rgb(4, 25, 71);
+  color: whitesmoke;
+  margin-left: 300px;
+  border: 1px dotted white;
+  border-radius: 0px 100px;
+  box-shadow: 3px 3px grey;
+}
+
+.titlehead2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  background:rgb(4, 25, 71);
+  color: whitesmoke;
+  margin-left: 650px;
+  border-radius: 0px 100px;
+  border: 1px dotted white;
+  box-shadow: 3px 3px grey;
+}
