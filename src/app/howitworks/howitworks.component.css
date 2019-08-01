@@ -99,6 +99,8 @@ h2 {
   border-radius: 0px 100px;
   box-shadow: 3px 3px grey;
   margin: 20px auto;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .mainsteps {

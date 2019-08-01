@@ -27,6 +27,9 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GrabeventsComponent } from './grabevents/grabevents.component';
+import { LogintypeComponent } from './logintype/logintype.component';
+import { LogincustomerComponent } from './logincustomer/logincustomer.component';
+import { Signup2Component } from './signup2/signup2.component';
 
 
 
@@ -49,7 +52,10 @@ import { GrabeventsComponent } from './grabevents/grabevents.component';
     FreelancerComponent,
     SignupComponent,
     LoginComponent,
-    GrabeventsComponent
+    GrabeventsComponent,
+    LogintypeComponent,
+    LogincustomerComponent,
+    Signup2Component
   ],
   imports: [
     BrowserModule,
